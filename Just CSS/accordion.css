@@ -6,17 +6,20 @@ body {
     font-size: 2em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     display: grid;
     width: 350px;
     height: 500px;
     grid-template-columns: 100px 1fr minmax(0, 50px) 50px 1fr minmax(50px, 150px) 150px;
-    transition: width, background-color 2s;
+    transition: width 2s;
 }
 
 ul:hover {
-    width: 85%;
-    background-color: yellow;
+    width: 550px;
 }
 
 
