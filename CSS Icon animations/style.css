@@ -1,0 +1,51 @@
+
+body {
+    box-sizing: border-box;
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*grid-template-areas:*/
+    /*"header" "header" "header"*/
+    /*"footer" "footer" "footer";*/
+    background-color: #f3f3f3;
+    width: 80%;
+    position: relative;
+    top: 15%;
+    left: calc(30% - 15px);
+}
+
+.item {
+    /*grid-area: header;*/
+    fill: #70c1b3;
+
+}
+
+.fil11, .fil12, .fil13 {
+    background-color: yellow;
+    animation: hideshow 10s ease infinite;
+}
+
+.fil14, .fil15, .fil16 {
+    opacity: 0;
+    animation: hideshow 10s 1.5s ease infinite;
+}
+
+.fil1 {
+    background-color: red;
+}
+
+animate {
+    fill: #70c1b3;
+}
+
+@keyframes hideshow {
+
+    0% { opacity: 1;}
+    10% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 0; }
+
+}
