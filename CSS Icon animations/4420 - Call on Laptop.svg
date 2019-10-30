@@ -7,9 +7,16 @@ viewBox="0 0 6.82666 6.82666"
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#202020;stroke-width:0.00333465;stroke-linecap:round;stroke-linejoin:round}
+    .str0 {stroke:#202020;stroke-width:0.00333465;stroke-linecap:round;stroke-linejoin:round
+    stroke-dasharray: 100;
+            animation: dash 5s linear;
+            }
+     @keyframes dash {
+        to {
+        stroke-dashoffset: 1000;
+        }}
     .fil24 {fill:none}
-    .fil16 {fill:#2F2F2F}
+    .fil16 {fill:yellow}
     .fil11 {fill:#565656}
     .fil10 {fill:#858585}
     .fil0 {fill:#8B8B8B}
@@ -20,7 +27,7 @@ viewBox="0 0 6.82666 6.82666"
     .fil13 {fill:#B9B9B9}
     .fil14 {fill:#BEBEBE}
     .fil9 {fill:#BFBFBF}
-    .fil17 {fill:#C0C0C1}
+    .fil17 {fill:red}
     .fil12 {fill:#C2C2C2}
     .fil15 {fill:#CFCFCF}
     .fil8 {fill:#CFCFD0}
@@ -33,7 +40,29 @@ viewBox="0 0 6.82666 6.82666"
     .fil3 {fill:#A4A4A5;fill-rule:nonzero}
     .fil2 {fill:#B7B7B7;fill-rule:nonzero}
     .fil4 {fill:#C5C5C5;fill-rule:nonzero}
+    .fil14, .fil15, .fil16 {
+    opacity: 0;
+    animation: hideshow 10s 1.5s ease infinite;
+}
+@keyframes hideshow {
+    0% { opacity: 1;}
+    10% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 0; }
+
+}
    ]]>
+
+   path {
+   stroke-dasharray: 100;
+    animation: dash 5s linear;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
   </style>
  </defs>
  <g id="Layer_x0020_1">
